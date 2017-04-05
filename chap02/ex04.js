@@ -1,6 +1,13 @@
-// Exercise from Chapter 2 - prints a 7-line pyramid of hashes.
+// Second Exercise from Chapter 2 - FizzBuzz
 
-for (var i = 0; i <= 7; i++) {
-    var str = "#";
-    console.log(str.repeat(i));
+for (var i = 1; i <= 100; i++) {
+    if (i % 15 === 0) {
+        console.log('FizzBuzz');
+    } else if (i % 3 === 0) {
+        console.log('Fizz');
+    } else if (i % 5 === 0) {
+        console.log('Buzz');
+    } else {
+        console.log(i);
+    }
 }
